@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:shortcutId="add_task"
+        android:shortcutLongLabel="@string/add_task"
+        android:shortcutShortLabel="@string/add_task">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.todoapp.ui.MainActivity"
+            android:targetPackage="com.todoapp">
+            <extra
+                android:name="action"
+                android:value="add_task" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar"
+        android:shortcutId="view_today"
+        android:shortcutLongLabel="@string/filter_today"
+        android:shortcutShortLabel="@string/today">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.todoapp.ui.MainActivity"
+            android:targetPackage="com.todoapp">
+            <extra
+                android:name="action"
+                android:value="view_today" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:shortcutId="search_tasks"
+        android:shortcutLongLabel="@string/search_tasks"
+        android:shortcutShortLabel="@string/search">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.todoapp.ui.MainActivity"
+            android:targetPackage="com.todoapp">
+            <extra
+                android:name="action"
+                android:value="search" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>

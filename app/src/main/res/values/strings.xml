@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Todo App</string>
+    
+    <!-- Navigation -->
+    <string name="tasks">Tasks</string>
+    <string name="calendar">Calendar</string>
+    <string name="categories">Categories</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Task Actions -->
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="search">Search</string>
+    <string name="search_tasks">Search tasks…</string>
+    <string name="more_options">More options</string>
+    <string name="mark_important">Mark as important</string>
+    <string name="archive">Archive</string>
+    <string name="unarchive">Unarchive</string>
+    
+    <!-- Task Form -->
+    <string name="task_title">Task title</string>
+    <string name="description">Description</string>
+    <string name="due_date_time">Due Date &amp; Time</string>
+    <string name="due_date">Due Date</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="additional_notes">Additional notes</string>
+    <string name="notes">Notes</string>
+    
+    <!-- Priority -->
+    <string name="priority">Priority</string>
+    <string name="priority_none">None</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    
+    <!-- Category -->
+    <string name="category">Category</string>
+    <string name="select_category">Select category</string>
+    <string name="add_category">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="category_name">Category name</string>
+    <string name="select_color">Select color</string>
+    <string name="select_icon">Select icon (optional)</string>
+    <string name="no_categories">No categories yet</string>
+    
+    <!-- Subtasks -->
+    <string name="subtasks">Subtasks</string>
+    <string name="add_subtask">Add subtask</string>
+    <string name="subtask_title">Subtask title</string>
+    <string name="delete_subtask">Delete subtask</string>
+    <string name="drag_to_reorder">Drag to reorder</string>
+    
+    <!-- Reminder -->
+    <string name="reminder">Reminder</string>
+    <string name="set_reminder_time">Set reminder time</string>
+    <string name="has_reminder">Has reminder</string>
+    
+    <!-- Repeat -->
+    <string name="repeat">Repeat</string>
+    <string name="repeat_daily">Daily</string>
+    <string name="repeat_weekly">Weekly</string>
+    <string name="repeat_monthly">Monthly</string>
+    <string name="repeating_task">Repeating task</string>
+    
+    <!-- Filters -->
+    <string name="filter_all">All</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_upcoming">Upcoming</string>
+    <string name="filter_completed">Completed</string>
+    <string name="filter_overdue">Overdue</string>
+    
+    <!-- Stats -->
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="overdue">Overdue</string>
+    
+    <!-- Empty States -->
+    <string name="no_tasks">No tasks</string>
+    <string name="no_tasks_yet">No tasks yet</string>
+    <string name="tap_to_add_first_task">Tap + to add your first task</string>
+    <string name="no_tasks_for_date">No tasks for this date</string>
+    
+    <!-- Settings -->
+    <string name="appearance">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+    
+    <string name="defaults">Defaults</string>
+    <string name="default_category">Default category</string>
+    <string name="default_priority">Default priority</string>
+    
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="task_reminders">Task reminders</string>
+    <string name="daily_summary">Daily summary</string>
+    <string name="done">Done</string>
+    
+    <string name="data">Data</string>
+    <string name="export_data">Export data</string>
+    <string name="export_data_description">Export all tasks as JSON</string>
+    <string name="import_data">Import data</string>
+    <string name="import_data_description">Import tasks from JSON file</string>
+    <string name="deleted_tasks">Deleted tasks</string>
+    <string name="deleted_tasks_desc">View and restore deleted tasks</string>
+    <string name="deleted_tasks_count">%d deleted task(s)</string>
+    <string name="no_deleted_tasks">No deleted tasks</string>
+    <string name="restore">Restore</string>
+    <string name="restore_task">Restore task</string>
+    <string name="delete_permanently">Delete permanently</string>
+    <string name="empty_trash">Empty trash</string>
+    <string name="empty_trash_confirm">Are you sure you want to permanently delete all tasks in trash? This cannot be undone.</string>
+    <string name="task_restored">Task restored</string>
+    <string name="task_permanently_deleted">Task permanently deleted</string>
+    <string name="trash_emptied">Trash emptied</string>
+    <string name="deleted_on">Deleted on %s</string>
+    
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_reminders">Task Reminders</string>
+    <string name="notification_channel_reminders_desc">Notifications for task reminders</string>
+    <string name="notification_channel_general">General</string>
+    <string name="notification_channel_general_desc">General app notifications</string>
+    <string name="notification_channel_summary">Daily Summary</string>
+    <string name="notification_channel_summary_desc">Daily task summary notifications</string>
+    <string name="notification_action_complete">Complete</string>
+    <string name="notification_action_snooze">Snooze</string>
+    <string name="daily_summary_title">Daily Summary</string>
+    <string name="daily_summary_text">You have %1$d pending tasks, %2$d due today</string>
+    <string name="upcoming_reminders">Task Reminders</string>
+    <string name="no_upcoming_reminders">No reminders set</string>
+    <string name="no_reminders_hint">Add reminders to your tasks to see them here</string>
+    <string name="reminder_at">Reminder: %s</string>
+    
+    <!-- Dialogs -->
+    <string name="delete_task_title">Delete Task?</string>
+    <string name="delete_task_message">This action cannot be undone.</string>
+    <string name="delete_category_title">Delete Category?</string>
+    <string name="delete_category_message">Tasks in this category will be moved to General.</string>
+    
+    <!-- Misc -->
+    <string name="selected">Selected</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="task_completed">Task completed</string>
+    <string name="undo">Undo</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="error_loading_task">Error loading task</string>
+    <string name="error_saving_task">Error saving task</string>
+    
+    <!-- Content descriptions -->
+    <string name="cd_complete_task">Mark task as complete</string>
+    <string name="cd_priority_indicator">Priority indicator</string>
+    <string name="cd_navigate_up">Navigate up</string>
+    
+    <!-- Additional strings for fragments -->
+    <string name="error_empty_title">Please enter a title</string>
+    <string name="task_saved">Task saved</string>
+    <string name="task_updated">Task updated</string>
+    <string name="category_created">Category created</string>
+    <string name="category_updated">Category updated</string>
+    <string name="category_deleted">Category deleted</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="delete_category_confirmation">Are you sure you want to delete \"%1$s\"? Tasks in this category will be uncategorized.</string>
+    <string name="add">Add</string>
+    <string name="mark_complete">Mark as complete</string>
+    <string name="no_tasks_pending">No pending tasks</string>
+    <string name="select_theme">Select Theme</string>
+    <string name="select_default_priority">Select Default Priority</string>
+    <string name="default_reminder">Default Reminder</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="import_data_warning">Importing data will merge with existing tasks. Continue?</string>
+    <string name="continue_action">Continue</string>
+    <string name="clear_completed_tasks">Clear Completed Tasks</string>
+    <string name="clear_completed_confirmation">This will permanently delete all completed tasks. Continue?</string>
+    <string name="completed_tasks_cleared">Completed tasks cleared</string>
+    <string name="version_format">Version %1$s</string>
+    <string name="thanks_for_rating">Thanks for your support!</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="data_exported">Data exported successfully</string>
+    <string name="data_imported">Data imported successfully</string>
+    <string name="export_failed">Export failed</string>
+    <string name="import_failed">Import failed</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_due_date">Due date</string>
+    <string name="sort_priority">Priority</string>
+    <string name="sort_created">Created date</string>
+    <string name="sort_date_created">Date created</string>
+    <string name="sort_alphabetically">Alphabetically</string>
+    <string name="sort_alphabetical">Alphabetical</string>
+    <string name="rate_app">Rate App</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="delete_task_confirmation">Are you sure you want to delete this task?</string>
+    <string name="created">Created</string>
+    <string name="modified">Modified</string>
+    <string name="created_at">Created: %1$s</string>
+    <string name="updated_at">Updated: %1$s</string>
+    <string name="repeat_yearly">Yearly</string>
+    <string name="repeat_none">No repeat</string>
+    <string name="progress">Progress</string>
+    <string name="refresh">Refresh</string>
+    <string name="important">Important</string>
+    <string name="no_reminder">No reminder</string>
+    <string name="no_repeat">No repeat</string>
+    <string name="no_category">No category</string>
+    <string name="manage_categories">Manage Categories</string>
+    <string name="manage_categories_desc">Add, edit, or delete categories</string>
+    
+    <!-- Analytics -->
+    <string name="analytics">Analytics</string>
+    <string name="total_tasks">Total Tasks</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="pending_tasks">Pending</string>
+    <string name="overdue_tasks">Overdue</string>
+    <string name="completion_rate">Completion Rate</string>
+    <string name="tasks_completed_today">Completed Today</string>
+    <string name="tasks_completed_week">Completed This Week</string>
+    <string name="tasks_completed_month">Completed This Month</string>
+    <string name="productivity_summary">Productivity Summary</string>
+    
+    <!-- Additional -->
+    <string name="none">None</string>
+    
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="guest_user">Guest User</string>
+    <string name="user">User</string>
+    <string name="sign_in_prompt">Sign in to sync your tasks</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_confirmation">Are you sure you want to sign out?</string>
+    <string name="sign_in_successful">Successfully signed in!</string>
+    <string name="sign_in_failed">Sign in failed. Please try again.</string>
+    <string name="signed_out_successfully">Signed out successfully</string>
+    <string name="close">Close</string>
+    
+    <!-- Profile Photo -->
+    <string name="change_profile_photo">Change Profile Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="remove_profile_photo">Remove Profile Photo</string>
+    <string name="remove_photo">Remove Photo</string>
+    <string name="remove_photo_confirmation">Are you sure you want to remove your profile photo?</string>
+    <string name="remove">Remove</string>
+    <string name="profile_photo_updated">Profile photo updated</string>
+    <string name="error_updating_photo">Error updating profile photo</string>
+    <string name="photo_removed">Profile photo removed</string>
+    
+    <!-- Profile Dialog -->
+    <string name="manage_account">Manage your Google Account</string>
+    <string name="switch_account">Switch account</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="hi_greeting">Hi, %1$s!</string>
+</resources>

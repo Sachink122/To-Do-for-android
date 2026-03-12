@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Monochrome checkmark icon for themed launcher -->
+    <group
+        android:translateX="27"
+        android:translateY="27">
+        <path
+            android:fillColor="#000000"
+            android:pathData="M27,0C12.09,0 0,12.09 0,27s12.09,27 27,27s27,-12.09 27,-27S41.91,0 27,0zM21.6,40.5L10.8,29.7l3.78,-3.78l7.02,6.99l14.82,-14.82l3.78,3.81L21.6,40.5z"/>
+    </group>
+    
+</vector>

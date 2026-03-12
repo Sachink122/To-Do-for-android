@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="4dp">
+
+    <!-- Drag Handle -->
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_drag_handle"
+        app:tint="?attr/colorOnSurfaceVariant"
+        android:contentDescription="@string/drag_to_reorder" />
+
+    <!-- Checkbox -->
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox_subtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp" />
+
+    <!-- Title Edit Text -->
+    <EditText
+        android:id="@+id/edit_subtask_title"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:inputType="textCapSentences"
+        android:imeOptions="actionDone"
+        android:textSize="15sp"
+        android:textColor="?attr/colorOnSurface"
+        android:hint="@string/subtask_title"
+        tools:text="Subtask item title" />
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/btn_delete_subtask"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close"
+        app:tint="?attr/colorOnSurfaceVariant"
+        android:contentDescription="@string/delete_subtask" />
+
+</LinearLayout>

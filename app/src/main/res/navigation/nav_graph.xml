@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskListFragment">
+
+    <!-- Global action to add task from anywhere -->
+    <action
+        android:id="@+id/action_global_addEditTask"
+        app:destination="@id/addEditTaskFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <!-- Task List Fragment -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.todoapp.ui.tasks.TaskListFragment"
+        android:label="@string/tasks"
+        tools:layout="@layout/fragment_task_list">
+
+        <action
+            android:id="@+id/action_taskList_to_addEditTask"
+            app:destination="@id/addEditTaskFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_taskList_to_taskDetail"
+            app:destination="@id/taskDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Add/Edit Task Fragment -->
+    <fragment
+        android:id="@+id/addEditTaskFragment"
+        android:name="com.todoapp.ui.tasks.AddEditTaskFragment"
+        android:label="@string/add_task"
+        tools:layout="@layout/fragment_add_edit_task">
+
+        <argument
+            android:name="taskId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </fragment>
+
+    <!-- Task Detail Fragment -->
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.todoapp.ui.tasks.TaskDetailFragment"
+        android:label="Task Details"
+        tools:layout="@layout/fragment_task_detail">
+
+        <argument
+            android:name="taskId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_taskDetail_to_addEditTask"
+            app:destination="@id/addEditTaskFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Calendar Fragment -->
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.todoapp.ui.calendar.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_calendar">
+
+        <action
+            android:id="@+id/action_calendar_to_taskDetail"
+            app:destination="@id/taskDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Categories Fragment -->
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.todoapp.ui.categories.CategoriesFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_categories">
+
+    </fragment>
+
+    <!-- Analytics Fragment -->
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.todoapp.ui.analytics.AnalyticsFragment"
+        android:label="@string/analytics"
+        tools:layout="@layout/fragment_analytics">
+
+    </fragment>
+
+    <!-- Settings Fragment -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.todoapp.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_settings_to_deletedTasks"
+            app:destination="@id/deletedTasksFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Deleted Tasks Fragment -->
+    <fragment
+        android:id="@+id/deletedTasksFragment"
+        android:name="com.todoapp.ui.settings.DeletedTasksFragment"
+        android:label="@string/deleted_tasks"
+        tools:layout="@layout/fragment_deleted_tasks">
+
+    </fragment>
+
+</navigation>
