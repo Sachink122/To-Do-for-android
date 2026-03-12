@@ -2,7 +2,13 @@
 
 A modern, offline-first To-Do List Android application built with Java and Android Jetpack libraries. Features MVVM architecture, Room database, Hilt dependency injection, and Material Design 3.
 
-## 📱 Features
+## � Download
+
+**Repository**: [https://github.com/Sachink122/To-Do-for-android](https://github.com/Sachink122/To-Do-for-android)
+
+Get the latest release from the [Releases](https://github.com/Sachink122/To-Do-for-android/releases) page.
+
+## �📱 Features
 
 ### Core Features
 - ✅ **Task Management** - Create, edit, delete, and complete tasks
@@ -203,6 +209,66 @@ app/
 3. Find "Todo Tasks" widget
 4. Drag to home screen
 
+## 🚀 Building & Deployment
+
+### Development Build
+
+```bash
+# Clone the repository
+git clone https://github.com/Sachink122/To-Do-for-android.git
+cd To-Do-for-android
+
+# Build debug APK
+./gradlew assembleDebug
+
+# Install on connected device
+./gradlew installDebug
+```
+
+### Production Build
+
+**For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)**
+
+#### Quick Build Commands
+
+```powershell
+# Build release APK (for testing)
+./build-release.ps1
+
+# Build release AAB (for Play Store)
+./build-aab.ps1
+```
+
+#### Manual Build
+
+```bash
+# Clean project
+./gradlew clean
+
+# Build release APK
+./gradlew assembleRelease
+
+# Build release AAB (recommended for Play Store)
+./gradlew bundleRelease
+```
+
+**Output locations:**
+- APK: `app/build/outputs/apk/release/app-release.apk`
+- AAB: `app/build/outputs/bundle/release/app-release.aab`
+
+### Deployment Checklist
+
+Before deploying to production:
+- ✅ Release signing configured
+- ✅ ProGuard rules optimized
+- ✅ Generate keystore for signing
+- ✅ Update version code/name
+- ✅ Add SHA-1 to Firebase Console
+- ✅ Test release build thoroughly
+- ✅ Upload to Play Console
+
+See [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for the complete checklist.
+
 ## 🧪 Testing
 
 ### Unit Tests
@@ -268,8 +334,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have questions or run into issues:
-- Open a [GitHub Issue](https://github.com/yourusername/todo-android/issues)
+- Open a [GitHub Issue](https://github.com/Sachink122/To-Do-for-android/issues)
 - Check existing issues for solutions
+- Read the [Deployment Guide](DEPLOYMENT_GUIDE.md) for setup help
+
+## 🔗 Links
+
+- **Repository**: [https://github.com/Sachink122/To-Do-for-android](https://github.com/Sachink122/To-Do-for-android)
+- **Issues**: [Report a bug or request a feature](https://github.com/Sachink122/To-Do-for-android/issues)
+- **Releases**: [Download latest version](https://github.com/Sachink122/To-Do-for-android/releases)
 
 ---
 
